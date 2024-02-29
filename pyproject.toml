@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "forest-explorer-graph"
+version = "0.1.0"
+description = ""
+authors = ["Arthur Fontaine <0arthur.fontaine@gmail.com>"]
+readme = "README.md"
+packages = [{include = "forest_explorer_graph"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.1"
+
+
+[tool.poetry.scripts]
+forest-explorer-graph = "forest_explorer_graph.__main__:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
